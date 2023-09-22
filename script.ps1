@@ -1,5 +1,4 @@
-# Create a new folder in your home directory
-New-Item -Path $env:USERPROFILE\NewFolder -ItemType Directory
+# Create a new file and write text contents to it
+$contents = "This is some text that we are writing to the file."
+$contents | Set-Content -Path $env:USERPROFILE\NewFile.txt
 
-# Create a new file in the newly created folder
-New-Item -Path $env:USERPROFILE\NewFolder\NewFile.txt -ItemType File
